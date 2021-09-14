@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <div className="form-section">
@@ -27,10 +28,15 @@ const Login = () => {
         <label className="form-label fgp">Forgot Password?</label>
         <br />
         <label className="form-label regnow">
-          Just Joining us here? <span className="regnowlink">Register Now</span>
+          Just Joining us here?
+          <Link to="/register" className="regnowlink">
+            Register Now
+          </Link>
         </label>
         <button type="submit" className="btn submit-btn loginbx">
-          <span className="login">Login</span>
+          <Link to="/" className="login">
+            Login
+          </Link>
         </button>
       </form>
     </div>

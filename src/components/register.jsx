@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const Register = () => {
   return (
     <div className="register-section">
@@ -70,7 +71,10 @@ const Register = () => {
         </div>
         <div className="reg-form-footer">
           <label className="got">
-            Got an account? <span className="signin">Sign in</span>
+            Got an account?{" "}
+            <Link to="/login" className="signin">
+              Signin
+            </Link>
           </label>
           <button type="submit" className="reg btn">
             <span className="regbtn">Register</span>
