@@ -1,38 +1,217 @@
 .App {
-  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+.left {
+  width: 570px;
+  height: 85vh;
+}
+.right {
+  width: 550px;
+  height: 85vh;
+}
+.logo {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  padding-left: 4%;
+  padding-top: 13px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dms {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  color: #030026;
+  position: relative;
+  top: 5px;
+  left: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.jumbotron {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: nowrap;
+  align-content: center;
+  padding-left: 5px;
+}
+.largeText {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #000000;
+  margin-top: 5px;
+}
+.smallerText {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.4;
+  width: 400px;
+  margin: auto;
+}
+.getStarted {
+  width: 126px;
+  height: 44px;
+  color: #ffffff;
+  background: #053582;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 8px;
+  margin: auto;
+  margin-top: 50px;
+}
+.jimg {
+  width: 157px;
+  height: 157px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.form-section {
+  width: 500px;
+  height: 450px;
+  background: #ffffff;
+  box-shadow: 3px -5px 40px rgba(205, 205, 212, 0.1);
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 10px;
+}
+.top-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+.info-text1 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #393939;
+}
+.info-text2 {
+  font-size: 14px;
+  letter-spacing: 0.003em;
+  color: #404040;
+  margin-top: -10px;
+}
+.form {
+  width: 416px;
+  height: 162px;
+  margin: auto;
+  margin-top: 20px;
+}
+.textbox {
+  width: 415px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #e2e2ea;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.submit-btn {
+  width: 82px;
+  height: 44px;
+  font: #ffffff;
+  background: #053582;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.login {
+  color: #ffffff;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fgp {
+  color: #244e92;
+  margin-left: 300px;
+  font-size: 14px;
+}
+.regnow {
+  margin-top: 40px;
+}
+.loginbx {
+  margin-left: 80px;
+}
+.regnowlink {
+  color: #244e92;
+}
+.register-section {
+  width: 400px;
+  height: 570px;
+  background: #ffffff;
+  box-shadow: 3px -5px 40px rgba(205, 205, 212, 0.1);
+  border-radius: 20px;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-right: 40px;
+}
+.namebx {
+  display: flex;
+  justify-content: space-between;
+}
+.cnamebx,
+.nnamebx {
+  width: 150px;
+}
+.input {
+  border-radius: 8px;
+}
+.policy {
+  color: #345b99;
+}
+.terms {
+  font-size: 11px;
+  font-weight: 600;
+}
+.rit1 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #393939;
+  margin-top: -15px;
+  margin-left: -40px;
+  margin-bottom: 10px;
+}
+.rit2 {
+  font-size: 14px;
+  letter-spacing: 0.003em;
+  color: #404040;
+  margin-top: -15px;
+  margin-left: -40px;
+  margin-bottom: 30px;
+}
+.progress {
+  height: 5px;
+  margin-top: 20px;
+}
+.progress-bar {
+  background-color: #053582;
+  width: 75%;
+  height: 5px;
+}
+.reg-form-footer {
+  margin-top: 30px;
+}
+.reg {
+  background-color: #053582;
+  color: #ffffff;
+  border-radius: 7px;
+  position: relative;
+  right: -120px;
+  font-size: 13px;
+}
+.signin {
+  color: #053582;
+}
+.got {
+  font-size: 12px;
 }
