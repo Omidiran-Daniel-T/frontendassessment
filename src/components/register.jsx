@@ -1,17 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ProgressBar from "./common/progressBar";
 const Register = () => {
   return (
     <div className="register-section">
-      <div className="progress">
-        <div
-          className="progress-bar"
-          role="progressbar"
-          aria-valuenow="75"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        ></div>
-      </div>
+      <ProgressBar
+        classes="progress-bar"
+        role="progressbar"
+        valuenow="70"
+        curValue={70}
+        valuemin="0"
+        valuemax="100"
+        parentClasses="progress"
+      />
       <div className="top-text">
         <p className="rit1">Basic Information</p>
         <p className="rit2">Enter the following information below</p>
@@ -71,7 +72,7 @@ const Register = () => {
         </div>
         <div className="reg-form-footer">
           <label className="got">
-            Got an account?{" "}
+            Got an account?{"  "}
             <Link to="/login" className="signin">
               Signin
             </Link>

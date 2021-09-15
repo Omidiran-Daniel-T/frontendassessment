@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Input from "./common/input";
 const Login = () => {
   return (
     <div className="form-section">
@@ -8,27 +9,23 @@ const Login = () => {
         <p className="info-text2">Enter the following information below</p>
       </div>
       <form className="form">
-        <div className="mb-3">
-          <input
-            type="email"
-            className="form-control textbox"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Email Address"
-          />
-        </div>
-        <div className="mb-3 input-group">
-          <input
-            type="password"
-            className="form-control textbox"
-            id="exampleInputPassword1"
-            placeholder="Password"
-          />
-        </div>
+        <Input
+          type="email"
+          classes="form-control textbox"
+          id="inputEmail1"
+          placeholder="Email Address"
+        />
+        <Input
+          type="password"
+          classes="form-control textbox"
+          id="inputPassword1"
+          placeholder="Password"
+          dClass="input-group"
+        />
         <label className="form-label fgp">Forgot Password?</label>
         <br />
         <label className="form-label regnow">
-          Just Joining us here?
+          Just Joining us here?{"  "}
           <Link to="/register" className="regnowlink">
             Register Now
           </Link>

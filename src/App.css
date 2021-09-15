@@ -30,7 +30,7 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0px;
   width: 100%;
@@ -154,7 +154,9 @@
   padding-left: 40px;
   padding-top: 20px;
   padding-right: 40px;
+  margin-left: 100px;
 }
+
 .namebx {
   display: flex;
   justify-content: space-between;
@@ -195,7 +197,7 @@
 }
 .progress-bar {
   background-color: #053582;
-  width: 75%;
+  /*width: 75%;*/
   height: 5px;
 }
 .reg-form-footer {
@@ -214,4 +216,62 @@
 }
 .got {
   font-size: 12px;
+}
+/*Dashbord*/
+.top-nav {
+  height: 50px;
+  background-color: #ffffff;
+  position: fixed;
+}
+.details {
+  /*background-color: red;*/
+  display: flex;
+  justify-content: space-evenly;
+  width: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.name {
+  font-size: 11px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.account-type {
+  font-weight: normal;
+}
+.logoimg {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.profile-img {
+  height: 35px;
+}
+.sidenav {
+  padding-top: 90px;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.dash-board-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8f0fe;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  height: 30px;
+  width: 180px;
+}
+.dashboard-nav-icon {
+  width: 16px;
+  height: 16px;
+}
+.nav-link-text {
+  font-size: 12px;
+}
+.row {
+  background-color: #e5eff4;
 }
