@@ -191,9 +191,9 @@ const DashBoard = () => {
                 <div className="orders-today">
                   <span className="ot">Orders Today</span>
                   <div className="ot-row2 ">
-                    <OTSection tag="Delivered" color=" blue" value={230} />
+                    <OTSection tag="Delivered" color=" blue" value={320} />
                     <OTSection tag="Reviews" color=" green" value={230} />
-                    <OTSection tag="Cancelled" color=" red" value={230} />
+                    <OTSection tag="Cancelled" color=" red" value={80} />
                   </div>
                   <div className="circle-progress">
                     <CircularProgressbar
@@ -225,7 +225,7 @@ const DashBoard = () => {
                     />
                   </div>
                   <div className="ot-graph">
-                    <OTGraph className="otg" />
+                    <OTGraph />
                   </div>
                 </div>
                 <div className="ept">
