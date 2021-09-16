@@ -34,7 +34,10 @@ const DashBoard = () => {
   return (
     <div className="body">
       <nav className="navbar fixed-top flex-md-nowrap p-0 top-nav ">
-        <img src={Logo} alt="Logo" className="logoimg" />
+        <div className="logo-img-wrap">
+          <img src={Logo} alt="Logo" className="logoimg" />
+          <div className="hr"></div>
+        </div>
         <input
           className="form-control w-50"
           type="text"

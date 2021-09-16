@@ -4,6 +4,7 @@ import LandingPage1 from "./components/landingPage1";
 import LandingPage2 from "./components/landingPage2";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import DashBoard from "./components/dashboard";
+// import LoginPage from "./components/loginpage";
 
 // import eye from "./images/eye.png";
 
