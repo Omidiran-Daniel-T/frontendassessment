@@ -30,11 +30,11 @@ const Login = () => {
             Register Now
           </Link>
         </label>
-        <button type="submit" className="btn submit-btn loginbx">
-          <Link to="/dashboard" className="login">
+        <Link to="/dashboard" className="login">
+          <button type="submit" className="btn submit-btn loginbx">
             Login
-          </Link>
-        </button>
+          </button>
+        </Link>
       </form>
     </div>
   );
