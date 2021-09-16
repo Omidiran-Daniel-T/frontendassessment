@@ -31,7 +31,7 @@ const Login = () => {
           </Link>
         </label>
         <button type="submit" className="btn submit-btn loginbx">
-          <Link to="/" className="login">
+          <Link to="/dashboard" className="login">
             Login
           </Link>
         </button>

@@ -78,7 +78,9 @@ const Register = () => {
             </Link>
           </label>
           <button type="submit" className="reg btn">
-            <span className="regbtn">Register</span>
+            <Link to="/register" className="regbtn">
+              Register
+            </Link>
           </button>
         </div>
       </form>

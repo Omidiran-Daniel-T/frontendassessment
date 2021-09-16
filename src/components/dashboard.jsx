@@ -18,7 +18,14 @@ import TCIcon from "../images/tcicon.png";
 import TCOIcon from "../images/tcoicon.png";
 import TCOSIcon from "../images/tcosicon.png";
 import DataCard from "./common/datacard";
+import UserProfile from "./common/profile";
+import SodpPhoto from "../images/sodpphoto.png";
+import SodpGraph from "../images/sodpcg.png";
+import EPTImage from "../images/eptimage.png";
+import EPTGrapghimg from "../images/eptgraphimg.png";
+import RProgressBars from "./common/rprogressbar";
 //import SupportIcon2 from "../images/supporticon2.png";
+
 const DashBoard = () => {
   return (
     <div className="body">
@@ -30,14 +37,7 @@ const DashBoard = () => {
           placeholder="Search"
           aria-label="Search"
         />
-        <div className="details">
-          <div className="profile-photo">
-            <img src={ProfilePhoto} alt="profile" className="profile-img" />
-          </div>
-          <div className="name">
-            Jude Adam <span className="account-type">Admin</span>
-          </div>
-        </div>
+        <UserProfile imgsrc={ProfilePhoto} name="Jude Adam" accType="Admin" />
       </nav>
       <div className="container-fluid">
         <div className="row">
@@ -133,15 +133,16 @@ const DashBoard = () => {
             <h2 className="dashboard-label">Dashboard</h2>
             <div className="graphs">
               <div className="stats-left">
-                <div id="tepo" className="data-card">
+                <div id="tepo" className="data-card bc-w">
                   <DataCard
                     tag="Total exchange Pool Order"
                     value={504}
                     icon={TepoIcon}
                     gicon={Line3}
+                    color="bc-w"
                   />
                 </div>
-                <div id="tc" className="data-card">
+                <div id="tc" className="data-card bc-lw">
                   <DataCard
                     tag="Total Companies"
                     value={504}
@@ -149,7 +150,7 @@ const DashBoard = () => {
                     gicon={Line3}
                   />
                 </div>
-                <div id="tco" className="data-card">
+                <div id="tco" className="data-card bc-lw">
                   <DataCard
                     tag="Total Cancelled Orders"
                     value={504}
@@ -157,7 +158,7 @@ const DashBoard = () => {
                     gicon={Line3}
                   />
                 </div>
-                <div id="tcos" className="data-card">
+                <div id="tcos" className="data-card bc-lw">
                   <DataCard
                     tag="Total Created Orders"
                     value={504}
@@ -167,8 +168,74 @@ const DashBoard = () => {
                 </div>
               </div>
               <div className="stats-right">
+                <div className="sodp">
+                  <span className="sodp-value">120</span>
+                  <span className="sodp-text">
+                    Companies sent orders to delivery pool today.
+                  </span>
+                  <img src={SodpPhoto} alt="sopdimage" className="sodp-image" />
+                  <span className="sodp-percent">+84%</span>
+                  <div className="graph-image-section">
+                    <img
+                      src={SodpGraph}
+                      alt="graph"
+                      className="sodp-graph-image"
+                    />
+                  </div>
+                  <span className="sodp-footnote">Comapred to yesterday</span>
+                </div>
+                <div className="orders-today">Orders Today</div>
+                <div className="ept">
+                  <div className="epu">
+                    <span className="epu-tag">Exchange Pool Today</span>
+                    <span className="epu-text">Most Orders picked by:</span>
+                  </div>
+                  <div className="epd">
+                    <div className="epdl">
+                      <img src={EPTImage} alt="epdimage" className="epd-img" />
+                      <span className="epd-name">FZ Deliveries</span>
+                      <span className="epd-location">Allen, Lagos</span>
+                      <span className="epd-order-value">504</span>
+                      <span className="eov-tag">Orders</span>
+                      <span className="epd-pool-value">267</span>
+                      <span className="epv-tag">Pushed to pool</span>
+                    </div>
+                    <div className="epdr">
+                      <span className="ep-price">N340,000</span>
+                      <img
+                        src={EPTGrapghimg}
+                        alt="epgraph"
+                        className="ep-graph"
+                      />
+                      <span className="ep-note">Comapared to Yesterday</span>
+                    </div>
+                  </div>
+                </div>
                 <div className="delivered-orders">
-                  <span className="doheader">{/*Delivered Orders*/}</span>
+                  <span className="doheader">Delivered Orders</span>
+                  <table>
+                    <RProgressBars day="Today" value={90} />
+                    <RProgressBars day="Yesterday" value={60} />
+                    <RProgressBars day="01 Mar 2021" value={70} />
+                    <RProgressBars day="02 Mar 2021" value={40} />
+                    <RProgressBars day="03 Mae 2021" value={80} />
+                    <tr>
+                      <td></td>
+                      <td className="do-progress-scale">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                        <span>150</span>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>

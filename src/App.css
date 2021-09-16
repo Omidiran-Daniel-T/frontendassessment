@@ -297,16 +297,21 @@
   /* background-color: red; */
 }
 .graphs {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
 }
 
 .stats-left {
-  /* background-color: blue; */
+  /* background- color: blue; */
   width: 350px;
 }
 .stats-right {
   /* background-color: green; */
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 800px;
+  flex-wrap: wrap;
 }
 .data-card {
   height: 110px;
@@ -315,7 +320,7 @@
   margin-top: 20px;
   background-color: #ffffff;
   border-radius: 7px;
-  border: 1px solid #ffffff;
+  border: 0px solid #ffffff;
 }
 .du-up {
   display: flex;
@@ -349,4 +354,163 @@
   width: 40px;
   margin-bottom: 12px;
   margin-left: 5px;
+}
+.sodp {
+  background-color: #ffffff;
+  width: 170px;
+  height: 240px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+.sodp-value {
+  font-size: 30px;
+  font-weight: 500;
+}
+.sodp-text {
+  font-size: 12px;
+  margin-top: -5px;
+}
+.sodp-image {
+  height: 40px;
+  width: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.sodp-percent {
+  color: #ff3a29;
+  font-size: 18px;
+}
+.sodp-graph-image {
+  height: 35px;
+}
+.sodp-footnote {
+  font-weight: 400;
+  font-size: 12px;
+}
+.orders-today {
+  height: 240px;
+  background-color: #ffffff;
+  width: 500px;
+  border-radius: 10px;
+}
+/* .bc-w {
+  background-color: #ffffff;
+}
+.bc-lw {
+  background-color: rgba(245, 245, 245, 0.62);
+} */
+.ept {
+  background-color: #ffffff;
+  height: 240px;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 270px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+.delivered-orders {
+  background-color: #ffffff;
+  height: 240px;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+.epu-tag {
+  font-weight: 700;
+  font-size: 15px;
+}
+.epu-text,
+.epd-location,
+.eov-tag,
+.epv-tag {
+  font-weight: 400;
+  font-size: 10px;
+  color: #92929d;
+}
+.epd-name {
+  font-weight: 700;
+  font-size: 13px;
+}
+.epd-order-value {
+  color: #ff3a29;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.epd-pool-value {
+  color: #4339f2;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.epd-image {
+  width: 80px;
+  height: 70px;
+}
+.epu {
+  display: flex;
+  flex-direction: column;
+}
+.epd {
+  display: flex;
+}
+.epdl {
+  display: flex;
+  flex-direction: column;
+}
+.epdr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.ep-price {
+  font-size: 24px;
+  font-weight: 700;
+}
+.ep-note {
+  font-weight: 400;
+  font-size: 10px;
+}
+.ep-graph {
+  height: 30px;
+  width: 100px;
+  margin-left: 10px;
+}
+.doheader {
+  font-weight: 500;
+  font-size: 20px;
+}
+.delivered-orders {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+.do-day {
+  font-size: 10px;
+  font-weight: 400;
+  color: #92929d;
+  /* background-color: yellow; */
+}
+.do-progress-bar {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 290px;
+  /* background-color: blue; */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.do-progress-scale {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  font-size: 10px;
+  opacity: 0.4;
+  color: #92929d;
 }
