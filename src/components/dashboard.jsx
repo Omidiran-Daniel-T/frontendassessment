@@ -24,7 +24,11 @@ import SodpGraph from "../images/sodpcg.png";
 import EPTImage from "../images/eptimage.png";
 import EPTGrapghimg from "../images/eptgraphimg.png";
 import RProgressBars from "./common/rprogressbar";
+import OTSection from "./otsection";
 //import SupportIcon2 from "../images/supporticon2.png";
+import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
+import OTGraph from "./otgraph";
 
 const DashBoard = () => {
   return (
@@ -184,7 +188,46 @@ const DashBoard = () => {
                   </div>
                   <span className="sodp-footnote">Comapred to yesterday</span>
                 </div>
-                <div className="orders-today">Orders Today</div>
+                <div className="orders-today">
+                  <span className="ot">Orders Today</span>
+                  <div className="ot-row2 ">
+                    <OTSection tag="Delivered" color=" blue" value={230} />
+                    <OTSection tag="Reviews" color=" green" value={230} />
+                    <OTSection tag="Cancelled" color=" red" value={230} />
+                  </div>
+                  <div className="circle-progress">
+                    <CircularProgressbar
+                      value={86}
+                      text={`${86}%`}
+                      className="cpb "
+                      styles={buildStyles({
+                        pathColor: "blue",
+                        textColor: "#000",
+                      })}
+                    />
+                    <CircularProgressbar
+                      value={67}
+                      text={`${67}%`}
+                      className="cpb "
+                      styles={buildStyles({
+                        pathColor: "green",
+                        textColor: "#000",
+                      })}
+                    />
+                    <CircularProgressbar
+                      value={14}
+                      text={`${14}%`}
+                      className="cpb"
+                      styles={buildStyles({
+                        pathColor: "red",
+                        textColor: "#000",
+                      })}
+                    />
+                  </div>
+                  <div className="ot-graph">
+                    <OTGraph className="otg" />
+                  </div>
+                </div>
                 <div className="ept">
                   <div className="epu">
                     <span className="epu-tag">Exchange Pool Today</span>

@@ -77,11 +77,11 @@ const Register = () => {
               Signin
             </Link>
           </label>
-          <button type="submit" className="reg btn">
-            <Link to="/register" className="regbtn">
+          <Link to="/register" className="regbtn">
+            <button type="submit" className="reg btn reg-btn">
               Register
-            </Link>
-          </button>
+            </button>
+          </Link>
         </div>
       </form>
     </div>

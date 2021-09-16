@@ -131,6 +131,9 @@
 .login {
   color: #ffffff;
 }
+.signin {
+  text-decoration: none;
+}
 .fgp {
   color: #244e92;
   margin-left: 300px;
@@ -143,8 +146,15 @@
   margin-left: 80px;
   color: #fff;
 }
+.loginbx:hover {
+  color: #fff;
+}
 .regnowlink {
   color: #244e92;
+  text-decoration: none;
+}
+.reg-btn:hover {
+  color: #ffffff;
 }
 .register-section {
   width: 400px;
@@ -396,6 +406,7 @@
   background-color: #ffffff;
   width: 500px;
   border-radius: 10px;
+  padding-top: 10px;
 }
 /* .bc-w {
   background-color: #ffffff;
@@ -514,4 +525,68 @@
   font-size: 10px;
   opacity: 0.4;
   color: #92929d;
+}
+.ot {
+  /* background-color: red; */
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.ot-row2 {
+  /* background-color: green; */
+  display: flex;
+  width: 300px;
+}
+.ot-graph {
+  /* background-color: blue; */
+  margin-top: -48px;
+  border-radius: 10px;
+}
+.otg {
+  border-radius: 10px;
+}
+.ot-color-icon {
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  margin-top: 6px;
+  margin-right: 4px;
+}
+.ot-tag {
+  font-size: 13px;
+  font-weight: 400;
+  /* background-color: yellow; */
+  display: flex;
+}
+.ot-value {
+  font-size: 21px;
+  font-weight: 500;
+}
+.del {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  margin-left: 15px;
+  align-items: center;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
+.cpb {
+  height: 60px;
+  width: 60px;
+}
+.circle-progress {
+  display: flex;
+  /* background-color: red; */
+  width: 200px;
+  position: relative;
+  left: 300px;
+  top: -30px;
 }
